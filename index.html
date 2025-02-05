@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="SnakeGame.css">
 </head>
 <body>
-    <h1>Snake Game</h1>
+    <h1>🐍 Snake Game</h1>
+    
+    <p id="score">Score: 0 | Time: 0s</p>
+    
+    <div id="difficulty">
+        <p>Select Difficulty:</p>
+        <button onclick="setDifficulty('easy')">🟢 Easy</button>
+        <button onclick="setDifficulty('medium')">🟡 Medium</button>
+        <button onclick="setDifficulty('hard')">🔴 Hard</button>
+    </div>
+    
+    <button id="startButton" disabled>Start Game</button>
+    
     <canvas id="gameCanvas"></canvas>
+
     <script src="SnakeGame.js"></script>
 </body>
 </html>
