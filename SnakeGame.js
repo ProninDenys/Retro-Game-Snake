@@ -127,3 +127,20 @@ function drawGame() {
     ctx.arc(food.x * TILE_SIZE + TILE_SIZE / 2, food.y * TILE_SIZE + TILE_SIZE / 2, TILE_SIZE / 2, 0, Math.PI * 2);
     ctx.fill();
 }
+
+document.getElementById("btn-up").addEventListener("click", () => {
+    if (direction !== "DOWN") direction = "UP";
+});
+
+document.getElementById("btn-down").addEventListener("click", () => {
+    if (direction !== "UP") direction = "DOWN";
+});
+
+document.getElementById("btn-left").addEventListener("click", () => {
+    if (direction !== "RIGHT") direction = "LEFT";
+});
+
+document.getElementById("btn-right").addEventListener("click", () => {
+    if (direction !== "LEFT") direction = "RIGHT";
+});
+
